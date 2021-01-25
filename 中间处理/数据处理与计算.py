@@ -102,7 +102,7 @@ def culEmotionalValue(file_path,target_path):
             rate = []
 
             for i in l:    #一直累计情绪词前面的副词与否定词，直到遇情绪为止
-                if (isHit(i,most)):
+                if (i in most):
                     rate.append(2)
                 elif (isHit(i,not_word)):
                     count += 1
